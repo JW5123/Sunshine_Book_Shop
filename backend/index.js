@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-const db = mysql.createConnection(dbConfig);
+const db = mysql.createConnection(dbConfig); // dbConfig is setting for your sql host, user, password and database
 
 app.use(express.json());
 app.use(cors());
