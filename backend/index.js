@@ -4,18 +4,14 @@ import cors from "cors";
 import multer from "multer";
 import path from "path";
 import { fileURLToPath } from 'url';
+import { dbConfig } from './config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Jay56607358a",
-    database: "nodejs_test"
-});
+const db = mysql.createConnection(dbConfig);
 
 app.use(express.json());
 app.use(cors());
