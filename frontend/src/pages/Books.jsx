@@ -20,7 +20,7 @@ const Books = () => {
     const handleDelete = async (id) => {
         try {
             await axios.delete("http://localhost:8800/books/" + id);
-            setBooks(books.filter(book => book.id !== id)); // Update local state
+            setBooks(books.filter(book => book.id !== id));
         } catch (error) {
             console.log(error);
         }

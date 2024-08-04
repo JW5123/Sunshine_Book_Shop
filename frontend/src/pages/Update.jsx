@@ -16,7 +16,6 @@ const Update = () => {
     const location = useLocation();
     const bookId = location.pathname.split("/")[2];
 
-    // Fetch book details on component mount
     useEffect(() => {
         const fetchBook = async () => {
             try {
