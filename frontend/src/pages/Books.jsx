@@ -42,7 +42,7 @@ const Books = () => {
                             <h4>Price: {book.price} $</h4>
                             <div className="bookActions">
                                 <button className='update'>
-                                    <Link to={`/update/${book.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>Update</Link>
+                                    <Link to={`/update/${book.id}`}>Update</Link>
                                 </button>
                                 <button className='delete' onClick={() => handleDelete(book.id)}>Delete</button>
                             </div>

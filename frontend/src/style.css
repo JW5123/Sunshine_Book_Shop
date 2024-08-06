@@ -90,6 +90,10 @@ img {
     color: white;
 }
 
+.update a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .form {
     display: flex;
@@ -115,4 +119,9 @@ input {
 .addButton {
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.formButton.addButton a {
+    text-decoration: none;
+    color: white;
 }
